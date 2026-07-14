@@ -241,7 +241,7 @@ function Navbar({ route }) {
           <div className="hidden lg:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
               <a key={l} href={`#${l.toLowerCase().replace(/\s/g, "-")}`}
-                 className={`link-underline text-sm font-medium tracking-wide ${dark ? "text-[var(--ink)]" : "text-white/90"}`}>
+                className={`link-underline text-sm font-medium tracking-wide ${dark ? "text-[var(--ink)]" : "text-white/90"}`}>
                 {l}
               </a>
             ))}
@@ -412,7 +412,7 @@ function TiltCard({ card, i }) {
   return (
     <Reveal delay={i * 90} cls="reveal-up">
       <div ref={tilt.ref} onMouseMove={tilt.onMouseMove} onMouseLeave={tilt.onMouseLeave}
-           className="tilt-card group relative bg-white rounded-3xl p-8 border border-black/5 hover:shadow-2xl hover:shadow-[var(--gold)]/20 h-full">
+        className="tilt-card group relative bg-white rounded-3xl p-8 border border-black/5 hover:shadow-2xl hover:shadow-[var(--gold)]/20 h-full">
         <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[var(--gold-soft)] to-[var(--gold)] flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-500">{card.icon}</div>
         <h3 className="font-display text-xl font-semibold text-[var(--ink)] mb-3">{card.title}</h3>
         <p className="text-[var(--ink)]/65 text-sm leading-relaxed">{card.text}</p>
@@ -428,7 +428,7 @@ function WhyChooseUs() {
       <div className="ring-decor w-[480px] h-[480px] top-1/4 -left-52 border-white/5 hidden lg:block" />
       <div className="max-w-7xl mx-auto px-6 relative">
         <Reveal>
-          <p className="font-mono text-[var(--gold-soft)] tracking-[0.3em] uppercase text-xs mb-4 text-center">Why Families Choose Us</p>
+          <p className="font-mono text-[var(--gold-soft)] tracking-[0.3em] uppercase text-xs mb-4 text-center">SKOOLGATE RFID SYSTEMS</p>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-white text-center max-w-2xl mx-auto leading-tight">Six commitments behind every report card</h2>
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-16">
@@ -547,7 +547,7 @@ function Events() {
     <section id="events" className="max-w-7xl mx-auto px-6 py-28">
       <Reveal>
         <p className="font-mono text-[var(--coral)] tracking-[0.3em] uppercase text-xs mb-4">What's Happening</p>
-        <h2 className="font-display text-4xl md:text-5xl font-semibold text-[var(--ink)]">Upcoming events</h2>
+        <h2 className="font-display text-4xl md:text-5xl font-semibold text-[var(--ink)]">SKOOLGATE RFID SYSTEMSFwhy fa</h2>
       </Reveal>
       <div className="grid md:grid-cols-3 gap-7 mt-14">
         {EVENTS.map((e, i) => (
@@ -583,7 +583,7 @@ function Testimonials() {
   return (
     <section className="bg-white max-w-full px-6 py-28 text-center">
       <Reveal>
-        <p className="font-mono text-[var(--coral)] tracking-[0.3em] uppercase text-xs mb-4">Voices of Our Community</p>
+        <p className="font-mono text-[var(--coral)] tracking-[0.3em] uppercase text-xs mb-4">SKOOLGATE RFID SYSTEMS</p>
         <h2 className="font-display text-4xl md:text-5xl font-semibold text-[var(--ink)] mb-14">What families say</h2>
       </Reveal>
       <div className="relative min-h-[280px] flex items-center justify-center max-w-5xl mx-auto">
@@ -656,7 +656,7 @@ function ContactSection() {
               <select className="bg-white border border-black/10 rounded-xl px-5 py-3.5 text-sm w-full focus:border-[var(--gold)] transition-colors text-[var(--ink)]/70">
                 <option>Interested Grade Level</option>
                 <option>Pre-Primary</option>
-                <option>Primary (1–5)</option>
+                <option>Primary (1–5)</option> 
                 <option>Middle School (6–8)</option>
                 <option>Senior Secondary (9–12)</option>
               </select>
@@ -673,12 +673,12 @@ function ContactSection() {
 
         <Reveal delay={100} cls="reveal-scale">
           <div className="rounded-[2rem] overflow-hidden shadow-2xl h-[420px] lg:h-full">
-<iframe
-  title="STEMSS School Location"
-  className="w-full h-full border-0"
-  loading="lazy"
-  src="https://www.google.com/maps?q=Gujarat,India&output=embed">
-</iframe>
+            <iframe
+              title="STEMSS School Location"
+              className="w-full h-full border-0"
+              loading="lazy"
+              src="https://www.google.com/maps?q=Gujarat,India&output=embed">
+            </iframe>
           </div>
           <div className="glass-light rounded-2xl p-6 mt-6 grid grid-cols-2 gap-6">
             <div><p className="text-[var(--ink)]/50 text-xs font-mono uppercase mb-1">Phone</p><p className="font-semibold text-[var(--ink)]">+91 00000 00000</p></div>
@@ -756,7 +756,7 @@ function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row justify-between gap-3">
-        <p className="text-white/35 text-xs font-mono">© Skoolgate RFID. All rights reserved.</p>
+        <p className="text-white/35 text-xs font-mono">© SKOOLGATE RFID SYSTEMS. All rights reserved.</p>
         <div className="flex gap-6 text-xs font-mono text-white/35">
           <a href="#privacy-policy" className="hover:text-[var(--gold-soft)] transition-colors">Privacy Policy</a>
           <a href="#terms-conditions" className="hover:text-[var(--gold-soft)] transition-colors">Terms & Conditions</a>
@@ -863,57 +863,97 @@ function LegalPage({ title, updated, intro, sections }) {
 
 function PrivacyPolicy() {
   const sections = [
-    { id: "introduction", title: "Introduction", content: [
-      "STEMSS School (\"the School\", \"we\", \"us\") respects the privacy of every parent, student and visitor who interacts with our website and admissions process. This Privacy Policy explains what information we collect, why we collect it, and how it is used and protected.",
-      "By using this website or submitting an enquiry, you agree to the practices described here." ] },
-    { id: "information-we-collect", title: "Information We Collect", content: [
-      "We may collect personal information you voluntarily provide, including the name, contact number, email address and grade of interest submitted through our enquiry and admission forms.",
-      "We may also collect non-personal technical data such as browser type, device information and pages visited, used to improve website performance." ] },
-    { id: "how-we-use-information", title: "How We Use Your Information", content: [
-      "Information collected is used to respond to admission enquiries, process applications, share school updates and events, and improve our website experience.",
-      "We do not use personal information for purposes unrelated to the School's academic or administrative operations without your consent." ] },
-    { id: "cookies", title: "Cookies & Tracking", content: [
-      "Our website may use cookies to remember preferences and understand how visitors use the site. You can disable cookies through your browser settings, though some features may not function as intended." ] },
-    { id: "data-sharing", title: "Data Sharing & Disclosure", content: [
-      "We do not sell or rent personal information to third parties. Limited data may be shared with trusted service providers (such as transport or ID-card vendors) strictly for operational purposes, under confidentiality obligations.",
-      "We may disclose information where required by law or to protect the safety of our students and staff." ] },
-    { id: "data-security", title: "Data Security", content: [
-      "We implement reasonable administrative and technical safeguards to protect personal information from unauthorised access, alteration or disclosure. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security." ] },
-    { id: "childrens-privacy", title: "Children's Privacy", content: [
-      "As an educational institution, we handle information relating to minors with additional care. Information about students is collected primarily through parents or guardians during the admission process and is used solely for educational and administrative purposes." ] },
-    { id: "your-rights", title: "Your Rights", content: [
-      "You may request access to, correction of, or deletion of personal information you have shared with us by contacting the school administration office. We will respond to reasonable requests within a reasonable timeframe." ] },
-    { id: "third-party-links", title: "Third-Party Links", content: [
-      "Our website may contain links to third-party websites (such as social media platforms). We are not responsible for the privacy practices or content of these external sites." ] },
-    { id: "changes", title: "Changes to This Policy", content: [
-      "We may update this Privacy Policy periodically to reflect changes in our practices. The revised version will be posted on this page with an updated date." ] },
+    {
+      id: "introduction", title: "Introduction", content: [
+        "STEMSS School (\"the School\", \"we\", \"us\") respects the privacy of every parent, student and visitor who interacts with our website and admissions process. This Privacy Policy explains what information we collect, why we collect it, and how it is used and protected.",
+        "By using this website or submitting an enquiry, you agree to the practices described here."]
+    },
+    {
+      id: "information-we-collect", title: "Information We Collect", content: [
+        "We may collect personal information you voluntarily provide, including the name, contact number, email address and grade of interest submitted through our enquiry and admission forms.",
+        "We may also collect non-personal technical data such as browser type, device information and pages visited, used to improve website performance."]
+    },
+    {
+      id: "how-we-use-information", title: "How We Use Your Information", content: [
+        "Information collected is used to respond to admission enquiries, process applications, share school updates and events, and improve our website experience.",
+        "We do not use personal information for purposes unrelated to the School's academic or administrative operations without your consent."]
+    },
+    {
+      id: "cookies", title: "Cookies & Tracking", content: [
+        "Our website may use cookies to remember preferences and understand how visitors use the site. You can disable cookies through your browser settings, though some features may not function as intended."]
+    },
+    {
+      id: "data-sharing", title: "Data Sharing & Disclosure", content: [
+        "We do not sell or rent personal information to third parties. Limited data may be shared with trusted service providers (such as transport or ID-card vendors) strictly for operational purposes, under confidentiality obligations.",
+        "We may disclose information where required by law or to protect the safety of our students and staff."]
+    },
+    {
+      id: "data-security", title: "Data Security", content: [
+        "We implement reasonable administrative and technical safeguards to protect personal information from unauthorised access, alteration or disclosure. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security."]
+    },
+    {
+      id: "childrens-privacy", title: "Children's Privacy", content: [
+        "As an educational institution, we handle information relating to minors with additional care. Information about students is collected primarily through parents or guardians during the admission process and is used solely for educational and administrative purposes."]
+    },
+    {
+      id: "your-rights", title: "Your Rights", content: [
+        "You may request access to, correction of, or deletion of personal information you have shared with us by contacting the school administration office. We will respond to reasonable requests within a reasonable timeframe."]
+    },
+    {
+      id: "third-party-links", title: "Third-Party Links", content: [
+        "Our website may contain links to third-party websites (such as social media platforms). We are not responsible for the privacy practices or content of these external sites."]
+    },
+    {
+      id: "changes", title: "Changes to This Policy", content: [
+        "We may update this Privacy Policy periodically to reflect changes in our practices. The revised version will be posted on this page with an updated date."]
+    },
   ];
   return <LegalPage title="Privacy Policy" updated="July 2026" intro="This policy describes how STEMSS School collects, uses and safeguards information shared with us by parents, students and website visitors." sections={sections} />;
 }
 
 function TermsConditions() {
   const sections = [
-    { id: "acceptance", title: "Acceptance of Terms", content: [
-      "By accessing this website or engaging with STEMSS School's admission process, you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, please discontinue use of this website." ] },
-    { id: "admissions", title: "Admission & Enrollment Terms", content: [
-      "Submission of an admission enquiry or application does not guarantee a seat. Admission is subject to seat availability, document verification, and the School's evaluation process.",
-      "Fees, once paid, are subject to the School's refund policy as communicated at the time of enrollment and are non-transferable between academic years." ] },
-    { id: "website-use", title: "Use of Website", content: [
-      "This website is intended to provide information about the School and facilitate admission enquiries. You agree not to misuse the site, attempt unauthorised access, or use it for any unlawful purpose." ] },
-    { id: "intellectual-property", title: "Intellectual Property", content: [
-      "All content on this website, including text, images, the school logo and design elements, is the property of STEMSS School unless otherwise credited, and may not be reproduced without written permission." ] },
-    { id: "fees-payments", title: "Fees & Payments", content: [
-      "Tuition and other fees are payable as per the schedule communicated by the School's accounts office. Late payments may attract charges as per the School's fee policy in effect at the time." ] },
-    { id: "code-of-conduct", title: "Code of Conduct", content: [
-      "Students and parents are expected to adhere to the School's code of conduct, as detailed in the student handbook shared at the time of admission. The School reserves the right to take appropriate disciplinary action for violations." ] },
-    { id: "media-consent", title: "Photography & Media Consent", content: [
-      "The School may photograph or record students during events and activities for use in newsletters, the website, or promotional material. Parents may opt out of this by informing the school office in writing." ] },
-    { id: "liability", title: "Limitation of Liability", content: [
-      "While the School takes reasonable care to ensure student safety and accurate information on this website, it shall not be liable for indirect or incidental damages arising from use of the website or reliance on its content." ] },
-    { id: "governing-law", title: "Governing Law", content: [
-      "These Terms & Conditions are governed by the laws of India, and any disputes shall be subject to the jurisdiction of the courts in Chennai, Tamil Nadu." ] },
-    { id: "changes-terms", title: "Changes to These Terms", content: [
-      "The School reserves the right to update these Terms & Conditions at any time. Continued use of the website after changes are posted constitutes acceptance of the revised terms." ] },
+    {
+      id: "acceptance", title: "Acceptance of Terms", content: [
+        "By accessing this website or engaging with STEMSS School's admission process, you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, please discontinue use of this website."]
+    },
+    {
+      id: "admissions", title: "Admission & Enrollment Terms", content: [
+        "Submission of an admission enquiry or application does not guarantee a seat. Admission is subject to seat availability, document verification, and the School's evaluation process.",
+        "Fees, once paid, are subject to the School's refund policy as communicated at the time of enrollment and are non-transferable between academic years."]
+    },
+    {
+      id: "website-use", title: "Use of Website", content: [
+        "This website is intended to provide information about the School and facilitate admission enquiries. You agree not to misuse the site, attempt unauthorised access, or use it for any unlawful purpose."]
+    },
+    {
+      id: "intellectual-property", title: "Intellectual Property", content: [
+        "All content on this website, including text, images, the school logo and design elements, is the property of STEMSS School unless otherwise credited, and may not be reproduced without written permission."]
+    },
+    {
+      id: "fees-payments", title: "Fees & Payments", content: [
+        "Tuition and other fees are payable as per the schedule communicated by the School's accounts office. Late payments may attract charges as per the School's fee policy in effect at the time."]
+    },
+    {
+      id: "code-of-conduct", title: "Code of Conduct", content: [
+        "Students and parents are expected to adhere to the School's code of conduct, as detailed in the student handbook shared at the time of admission. The School reserves the right to take appropriate disciplinary action for violations."]
+    },
+    {
+      id: "media-consent", title: "Photography & Media Consent", content: [
+        "The School may photograph or record students during events and activities for use in newsletters, the website, or promotional material. Parents may opt out of this by informing the school office in writing."]
+    },
+    {
+      id: "liability", title: "Limitation of Liability", content: [
+        "While the School takes reasonable care to ensure student safety and accurate information on this website, it shall not be liable for indirect or incidental damages arising from use of the website or reliance on its content."]
+    },
+    {
+      id: "governing-law", title: "Governing Law", content: [
+        "These Terms & Conditions are governed by the laws of India, and any disputes shall be subject to the jurisdiction of the courts in Chennai, Tamil Nadu."]
+    },
+    {
+      id: "changes-terms", title: "Changes to These Terms", content: [
+        "The School reserves the right to update these Terms & Conditions at any time. Continued use of the website after changes are posted constitutes acceptance of the revised terms."]
+    },
   ];
   return <LegalPage title="Terms & Conditions" updated="July 2026" intro="These terms govern your use of the STEMSS School website and outline the conditions related to admissions, fees and conduct." sections={sections} />;
 }
