@@ -36,7 +36,7 @@ const GALLERY = [
 ];
 
 const TESTIMONIALS = [
-  { name: "Anitha Raghavan", role: "Parent, Grade 4", quote: "STEMSS feels like an extension of home. My daughter runs to school every morning — that says everything.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=facearea&facepad=3" },
+  { name: "Anitha Raghavan", role: "Parent, Grade 4", quote: "IT Corner feels like an extension of home. My daughter runs to school every morning — that says everything.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=facearea&facepad=3" },
   { name: "Karthik Subramanian", role: "Alumnus, Class of 2019", quote: "The mentorship here shaped how I think, not just what I know. I still call my Grade 12 teacher for advice.", img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200&auto=format&fit=facearea&facepad=3" },
   { name: "Meera Prakash", role: "Parent, Grade 8", quote: "The balance between academics, sports and values is rare. It's a school that genuinely sees the whole child.", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=facearea&facepad=3" },
 ];
@@ -62,7 +62,7 @@ const EVENTS = [
 ];
 
 const FAQS = [
-  { q: "What is the admission process for STEMSS School?", a: "Admissions open in January each year. Fill the online enquiry form, submit the required documents, and your child will be scheduled for an age-appropriate interaction session before final confirmation." },
+  { q: "What is the admission process for IT Corner School?", a: "Admissions open in January each year. Fill the online enquiry form, submit the required documents, and your child will be scheduled for an age-appropriate interaction session before final confirmation." },
   { q: "What curriculum does the school follow?", a: "We follow the CBSE curriculum from Kindergarten through Grade 12, supplemented with project-based learning, STEM labs and the arts." },
   { q: "Does the school provide transport facilities?", a: "Yes, GPS-tracked bus transport is available across major routes in the city, with trained attendants on every vehicle." },
   { q: "What is the student-to-teacher ratio?", a: "We maintain a ratio of approximately 20:1 to ensure every child receives individual attention." },
@@ -232,7 +232,7 @@ function Navbar({ route }) {
             <span className="font-display text-[var(--gold)] text-lg font-bold">LS</span>
           </div>
           <div className="leading-tight">
-            <p className={`font-display font-semibold text-lg ${dark ? "text-[var(--ink)]" : "text-white"}`}>STEMSS</p>
+            <p className={`font-display font-semibold text-lg ${dark ? "text-[var(--ink)]" : "text-white"}`}>IT Corner</p>
             <p className={`font-mono text-[10px] tracking-[0.2em] uppercase ${dark ? "text-[var(--gold)]" : "text-[var(--gold-soft)]"}`}>School</p>
           </div>
         </a>
@@ -292,7 +292,7 @@ function Hero() {
           Where little minds <span className="chalk-mark reveal text-[var(--gold-soft)]">grow</span> into great futures
         </h1>
         <p className="text-white/75 max-w-xl mt-7 text-lg leading-relaxed">
-          STEMSS School blends disciplined academics with compassion, creativity and care — for every child, every single day.
+          IT Corner School blends disciplined academics with compassion, creativity and care — for every child, every single day.
         </p>
         <div className="flex flex-wrap gap-4 mt-10">
           <a href="#admissions" className="btn-gold px-8 py-4 rounded-full font-semibold">Begin Admission</a>
@@ -341,7 +341,7 @@ function About() {
       <Reveal cls="reveal-scale">
         <div className="relative">
           <div className="rounded-[2rem] overflow-hidden shadow-2xl shadow-black/20">
-            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop" alt="STEMSS School library" className="w-full h-[480px] object-cover" />
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop" alt="IT Corner School library" className="w-full h-[480px] object-cover" />
           </div>
           <div className="absolute -bottom-8 -left-8 glass-light rounded-2xl p-6 w-52 shadow-xl hidden sm:block">
             <p className="font-display text-3xl text-[var(--forest)] font-semibold"><CountUp end={32} suffix="+" /></p>
@@ -356,7 +356,7 @@ function About() {
           A name that means <span className="chalk-mark reveal">love</span>, built into every classroom
         </h2>
         <p className="text-[var(--ink)]/70 mt-6 leading-relaxed text-lg">
-          Since 1992, STEMSS School has grown from a single-block campus into one of the region's most trusted institutions — never losing sight of the belief that every child deserves to be seen, encouraged and challenged.
+          Since 1992, IT Corner School has grown from a single-block campus into one of the region's most trusted institutions — never losing sight of the belief that every child deserves to be seen, encouraged and challenged.
         </p>
         <div className="grid sm:grid-cols-2 gap-5 mt-9">
           {["CBSE Curriculum, Grades K–12", "Certified & Experienced Faculty", "Smart Classrooms & STEM Labs", "24/7 Secured, CCTV Campus"].map((f) => (
@@ -390,7 +390,7 @@ function Leadership() {
           </p>
           <div>
             <p className="font-display text-xl font-semibold text-[var(--ink)]">Dr. Radhika Iyer</p>
-            <p className="text-[var(--ink)]/50 text-sm font-mono">Principal, STEMSS School</p>
+            <p className="text-[var(--ink)]/50 text-sm font-mono">Principal, IT Corner School</p>
           </div>
         </Reveal>
         <Reveal cls="reveal-scale" className="order-1 lg:order-2">
@@ -483,7 +483,7 @@ function Gallery() {
         <Reveal className="flex items-end justify-between flex-wrap gap-4">
           <div>
             <p className="font-mono text-[var(--coral)] tracking-[0.3em] uppercase text-xs mb-4">Campus Gallery</p>
-            <h2 className="font-display text-4xl md:text-5xl font-semibold text-[var(--ink)]">Life inside STEMSS</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-[var(--ink)]">Life inside IT Corner</h2>
           </div>
         </Reveal>
         <div id="campus-life" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
@@ -674,7 +674,7 @@ function ContactSection() {
         <Reveal delay={100} cls="reveal-scale">
           <div className="rounded-[2rem] overflow-hidden shadow-2xl h-[420px] lg:h-full">
             <iframe
-              title="STEMSS School Location"
+              title="IT Corner School Location"
               className="w-full h-full border-0"
               loading="lazy"
               src="https://www.google.com/maps?q=Gujarat,India&output=embed">
@@ -724,7 +724,7 @@ function Footer() {
         <div className="md:col-span-1">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-11 h-11 rounded-full seal-ring flex items-center justify-center bg-[var(--navy-deep)]"><span className="font-display text-[var(--gold)] text-lg font-bold">LS</span></div>
-            <p className="font-display text-white text-lg font-semibold">STEMSS</p>
+            <p className="font-display text-white text-lg font-semibold">IT Corner</p>
           </div>
           <p className="text-white/50 text-sm leading-relaxed">Nurturing every child with excellence, compassion and care since 1992.</p>
           <div className="flex gap-3 mt-6">
@@ -865,7 +865,7 @@ function PrivacyPolicy() {
   const sections = [
     {
       id: "introduction", title: "Introduction", content: [
-        "STEMSS School (\"the School\", \"we\", \"us\") respects the privacy of every parent, student and visitor who interacts with our website and admissions process. This Privacy Policy explains what information we collect, why we collect it, and how it is used and protected.",
+        "IT Corner School (\"the School\", \"we\", \"us\") respects the privacy of every parent, student and visitor who interacts with our website and admissions process. This Privacy Policy explains what information we collect, why we collect it, and how it is used and protected.",
         "By using this website or submitting an enquiry, you agree to the practices described here."]
     },
     {
@@ -908,14 +908,14 @@ function PrivacyPolicy() {
         "We may update this Privacy Policy periodically to reflect changes in our practices. The revised version will be posted on this page with an updated date."]
     },
   ];
-  return <LegalPage title="Privacy Policy" updated="July 2026" intro="This policy describes how STEMSS School collects, uses and safeguards information shared with us by parents, students and website visitors." sections={sections} />;
+  return <LegalPage title="Privacy Policy" updated="July 2026" intro="This policy describes how IT Corner School collects, uses and safeguards information shared with us by parents, students and website visitors." sections={sections} />;
 }
 
 function TermsConditions() {
   const sections = [
     {
       id: "acceptance", title: "Acceptance of Terms", content: [
-        "By accessing this website or engaging with STEMSS School's admission process, you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, please discontinue use of this website."]
+        "By accessing this website or engaging with IT Corner School's admission process, you agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, please discontinue use of this website."]
     },
     {
       id: "admissions", title: "Admission & Enrollment Terms", content: [
@@ -928,7 +928,7 @@ function TermsConditions() {
     },
     {
       id: "intellectual-property", title: "Intellectual Property", content: [
-        "All content on this website, including text, images, the school logo and design elements, is the property of STEMSS School unless otherwise credited, and may not be reproduced without written permission."]
+        "All content on this website, including text, images, the school logo and design elements, is the property of IT Corner School unless otherwise credited, and may not be reproduced without written permission."]
     },
     {
       id: "fees-payments", title: "Fees & Payments", content: [
@@ -955,7 +955,7 @@ function TermsConditions() {
         "The School reserves the right to update these Terms & Conditions at any time. Continued use of the website after changes are posted constitutes acceptance of the revised terms."]
     },
   ];
-  return <LegalPage title="Terms & Conditions" updated="July 2026" intro="These terms govern your use of the STEMSS School website and outline the conditions related to admissions, fees and conduct." sections={sections} />;
+  return <LegalPage title="Terms & Conditions" updated="July 2026" intro="These terms govern your use of the IT Corner School website and outline the conditions related to admissions, fees and conduct." sections={sections} />;
 }
 
 /* ================= APP ================= */
